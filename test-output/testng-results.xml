@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[chrome Test suite execution starts..]]>
+    </line>
+    <line>
+      <![CDATA[login started..]]>
+    </line>
+    <line>
+      <![CDATA[Enter user name]]>
+    </line>
+    <line>
+      <![CDATA[Enter password]]>
+    </line>
+    <line>
+      <![CDATA[click login button]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='.\screenShots\passedTCSS\login.png' height='100' width='100'/><br>]]>
+    </line>
+    <line>
+      <![CDATA[login success !!]]>
+    </line>
+    <line>
+      <![CDATA[checkMenu started..]]>
+    </line>
+    <line>
+      <![CDATA[click menu button]]>
+    </line>
+    <line>
+      <![CDATA[click about link]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='.\screenShots\passedTCSS\checkMenu.png' height='100' width='100'/><br>]]>
+    </line>
+    <line>
+      <![CDATA[checkMenu success !!]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-09-11T13:24:47 IST" name="seleniumAutomation" finished-at="2023-09-11T13:25:12 IST" duration-ms="24740">
+    <groups>
+    </groups>
+    <test started-at="2023-09-11T13:24:47 IST" name="chrome Test" finished-at="2023-09-11T13:25:12 IST" duration-ms="24740">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LoginTest@1e0b4072]" started-at="2023-09-11T13:24:42 IST" name="setup" finished-at="2023-09-11T13:24:47 IST" duration-ms="4493" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="launchBrouser()[pri:0, instance:tests.LoginTest@1e0b4072]" started-at="2023-09-11T13:24:47 IST" name="launchBrouser" finished-at="2023-09-11T13:24:52 IST" duration-ms="4820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrouser -->
+        <test-method is-config="true" signature="maximizeWindow(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@1e0b4072]" started-at="2023-09-11T13:24:52 IST" name="maximizeWindow" finished-at="2023-09-11T13:24:52 IST" duration-ms="291" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.login()[pri:1, instance:tests.LoginTest@1e0b4072] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maximizeWindow -->
+        <test-method signature="login()[pri:1, instance:tests.LoginTest@1e0b4072]" started-at="2023-09-11T13:24:52 IST" name="login" finished-at="2023-09-11T13:24:53 IST" duration-ms="756" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[login started..]]>
+            </line>
+            <line>
+              <![CDATA[Enter user name]]>
+            </line>
+            <line>
+              <![CDATA[Enter password]]>
+            </line>
+            <line>
+              <![CDATA[click login button]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='.\screenShots\passedTCSS\login.png' height='100' width='100'/><br>]]>
+            </line>
+            <line>
+              <![CDATA[login success !!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="maximizeWindow(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@1e0b4072]" started-at="2023-09-11T13:24:53 IST" name="maximizeWindow" finished-at="2023-09-11T13:24:53 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.checkMenu()[pri:2, instance:tests.LoginTest@1e0b4072] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maximizeWindow -->
+        <test-method signature="checkMenu()[pri:2, instance:tests.LoginTest@1e0b4072]" started-at="2023-09-11T13:24:53 IST" name="checkMenu" finished-at="2023-09-11T13:25:08 IST" duration-ms="14418" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[checkMenu started..]]>
+            </line>
+            <line>
+              <![CDATA[click menu button]]>
+            </line>
+            <line>
+              <![CDATA[click about link]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='.\screenShots\passedTCSS\checkMenu.png' height='100' width='100'/><br>]]>
+            </line>
+            <line>
+              <![CDATA[checkMenu success !!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkMenu -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@1e0b4072]" started-at="2023-09-11T13:25:10 IST" name="tearDown" finished-at="2023-09-11T13:25:12 IST" duration-ms="1741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+    </test> <!-- chrome Test -->
+  </suite> <!-- seleniumAutomation -->
+</testng-results>
