@@ -4,13 +4,12 @@ import java.sql.*;
 
 public class DataBaseUtility {
    public static Connection con;
-    public static Connection getDBConnection(){
+    public static void getDBConnection(){
         try {
             con = DriverManager.getConnection("db_url", "un", "pwd");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return con;
     }
     public static void closeDBConnection(){
         try {

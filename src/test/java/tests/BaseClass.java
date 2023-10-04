@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.*;
+import utilities.DataBaseUtility;
 import utilities.ExtentManager;
 import utilities.ReadConfig;
 
@@ -33,15 +34,16 @@ public class BaseClass {
 	public void setup(@Optional("chrome")String browser) {
 		if(browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webDriver.chrome.driver", chromePath);
-			driver = new ChromeDriver();
 		}
 		ext = ExtentManager.createExtentReports();
 		logger = Logger.getLogger("seleniumAutomation");
 		PropertyConfigurator.configure("log4j.properties");
+		DataBaseUtility.getDBConnection();
 	}
 	
 	@BeforeTest
 	public void launchBrouser() throws InterruptedException {
+		driver = new ChromeDriver();
 		driver.get(baseUrl);
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.MILLISECONDS);
 		driver.manage().window().fullscreen();
